@@ -10,7 +10,7 @@ import { todoAddAll } from './actions';
 
 class App extends React.Component {
 	componentDidMount(){
-		fetch('tasks').then(function(res){
+		fetch('zakaz').then(function(res){
 			return res.json();
 		}).then((data)=>{
 			this.props.dispatch(todoAddAll(data));
@@ -28,7 +28,6 @@ class App extends React.Component {
 					<Routes>
 						<Route path="/" element={<ToDoList />} />
 						<Route path="/add" element={<ToDoTaskAdd />} />
-						<Route path="/onas" element={<ONas/>}/>
 					</Routes>
 				</Router>
 				</Provider>
