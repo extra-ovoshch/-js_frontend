@@ -7,6 +7,7 @@ import ToDoTaskAdd from './ToDoTaskAdd';
 import { todoAddAll } from './actions';
 
 
+
 class App extends React.Component {
 	componentDidMount(){
 		fetch('tasks').then(function(res){
@@ -15,6 +16,8 @@ class App extends React.Component {
 			this.props.dispatch(todoAddAll(data));
 		});
 	}
+	
+	
 	
 	render() {
 	  return (

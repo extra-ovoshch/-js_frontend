@@ -34,6 +34,7 @@ class ToDoList extends React.Component {
           </perfect-scrollbar>
         </div>
         <div className="d-block text-right card-footer">
+			<NavLink to='/onas.js' className="btn btn-primary"> О нас </NavLink>
 			<NavLink to='/add' className="btn btn-primary"> Добавить заказ </NavLink>
       </div>
 	  </div>
